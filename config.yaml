@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: 'CMER 网站状态检测'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -15,25 +15,112 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: github.com # unique identifier
-    name: github.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://github.com/' # URL to fetch
+  - id: cmer-group # unique identifier
+    name: 【希瑪集團官網】
+    description: '集团官网，代码托管GitHub，已转移到服务器' # default=empty
+    url: 'https://cmereye.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
-    method: GET
-    expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
-    method: GET
-    expectStatus: 200
+  - id: cmer-hkcmereye # unique identifier
+    name: 【眼科中心】OPD
+    description: '' # default=empty
+    url: 'https://www.hkcmereye.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+    - id: cmer-eyecenter # unique identifier
+    name: 【眼科中心】Eye Center (old)
+    description: '' # default=empty
+    url: 'https://www.hkeyecmer.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+    - id: cmer-vision # unique identifier
+    name: 【視光中心】Vision
+    description: '' # default=empty
+    url: 'https://www.cmervision.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+    - id: cmer-smile # unique identifier
+    name: 【微笑矯視】Smile
+    description: '' # default=empty
+    url: 'https://smile.hkcmereye.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+    - id: cmer-Dental # unique identifier
+    name: 【口腔】Dental
+    description: '' # default=empty
+    url: 'https://cmerdental.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+    - id: cmer-smilepartner # unique identifier
+    name: 【口腔 微笑矯齒】 Smile partner
+    description: '' # default=empty
+    url: 'https://smilepartner.hk/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+    - id: cmer-amer # unique identifier
+    name: 【愛瑪醫美】AMER
+    description: '' # default=empty
+    url: 'https://www.ameraesthetics.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+    - id: cmer-cmermedical # unique identifier
+    name: 【希瑪醫療】CMER - Medical
+    description: '' # default=empty
+    url: 'https://www.cmermedical.com' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+    - id: cmer-iol # unique identifier
+    name: 【老花】IOL着陆页-单页
+    description: '' # default=empty
+    url: 'https://iol.cmersmile.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+    - id: cmer-Oncology # unique identifier
+    name: 【腫瘤癌症】Oncology
+    description: '' # default=empty
+    url: 'https://cmeroncology.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+    - id: cmer-Lab # unique identifier
+    name: 【希華檢測】Lab
+    description: '' # default=empty
+    url: 'https://www.healthhope.hk/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  
