@@ -12,7 +12,7 @@ settings:
   monitorLabelNoData: '没有数据'
   dayInHistogramNoData: '没有数据'
   dayInHistogramOperational: '一切正常'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  dayInHistogramNotOperational: ' 【事故】' # xx incident(s) recorded
 
 monitors:
   - id: cmer-group # unique identifier
