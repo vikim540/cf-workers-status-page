@@ -1,17 +1,17 @@
 settings:
-  title: '状态Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
+  title: '【CMER网站状态监测 | Status Page】'
+  url: 'https://uptimecf.cmer.eu.org/' # used for Slack messages
+  logo: 'https://www.hkcmereye.com/template/default/icons/index.ico' # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
+  allmonitorsOperational: '所有系统正常运行'
+  notAllmonitorsOperational: '部分网站异常'
+  monitorLabelOperational: '状态稳定'
+  monitorLabelNotOperational: '监测异常'
+  monitorLabelNoData: '没有数据'
+  dayInHistogramNoData: '没有数据'
+  dayInHistogramOperational: '一切正常'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
