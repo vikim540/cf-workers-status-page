@@ -36,7 +36,7 @@ monitors:
   - id: cmer-eyecenter # unique identifier
     name: 【眼科中心】Eye Center (old)
     description: '' # default=empty
-    url: 'https://www.hkeyecmer.com/' # URL to fetch
+    url: 'https://hkeyecmer.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -90,7 +90,7 @@ monitors:
   - id: cmer-cmermedical # unique identifier
     name: 【希瑪醫療】CMER - Medical
     description: '' # default=empty
-    url: 'https://www.cmermedical.com' # URL to fetch
+    url: 'https://cmermedical.com' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
